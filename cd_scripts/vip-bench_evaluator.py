@@ -22,10 +22,10 @@ model_results_file = os.path.join(result_path, f"{method}-{model}-{vipbench_spli
 
 use_azure_openai = True
 if use_azure_openai:
-    openai.api_key = 
-    openai.api_base = 
-    openai.api_type = 
-    openai.api_version = 
+    openai.api_key = ""
+    openai.api_base = ""
+    openai.api_type = ""
+    openai.api_version = "" 
     deployment_id = "gpt-4"
     gpt_model = deployment_id
 else:
