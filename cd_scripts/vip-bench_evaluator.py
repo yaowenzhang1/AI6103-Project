@@ -22,17 +22,10 @@ model_results_file = os.path.join(result_path, f"{method}-{model}-{vipbench_spli
 
 use_azure_openai = True
 if use_azure_openai:
-    #   openai.api_key = os.environ.get("AZURE_OPENAI_KEY")
-    #   openai.api_base = os.environ.get("AZURE_OPENAI_BASE") 
-    #   openai.api_type = 'azure'
-    #   openai.api_version = os.environ.get("AZURE_OPENAI_API_VERSION")
-    #   deployment_id = os.environ.get("AZURE_OPENAI_DEP_ID")
-    #   gpt_model = deployment_id
-
     # openai.api_key = os.environ.get("AZURE_OPENAI_KEY")
-    openai.api_key = "1iahHWpIOVPD7Eo46Rc73tsf3YjOmhXBA2jGEXdOT8br8ZaEdpRzJQQJ99AKACYeBjFXJ3w3AAABACOGLcSv"
+    openai.api_key = "use your own"
     # openai.api_base = os.environ.get("AZURE_OPENAI_BASE")
-    openai.api_base = "https://yaowen001firstinstance.openai.azure.com/" 
+    openai.api_base = "use yoiur own" 
     openai.api_type = 'azure'
     # openai.api_version = os.environ.get("AZURE_OPENAI_API_VERSION")
     openai.api_version = "2024-10-01-preview"
