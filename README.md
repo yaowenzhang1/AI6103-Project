@@ -30,7 +30,7 @@ Download [COCOVAL2014](http://images.cocodataset.org/zips/val2014.zip), [GQA](ht
     └── images
 ```
 ### ViP-Bench
-Download [ViP-Bench](https://huggingface.co/datasets/mucai/ViP-Bench/tree/main) to root directory.
+Download [ViP-Bench](https://huggingface.co/datasets/mucai/ViP-Bench/tree/main) to root directory of this project.
 
 ## Evaluation
 ### POPE
