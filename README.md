@@ -64,7 +64,7 @@ then run
 bash cd_scripts/vcd_vipbench.bash
 ```
 
-After running, there are folers `answers` and `results` in `output/ViP-Bench`. Move/copy `results` to  `ViP-Bench` that was downloaded before. Then, specify split, method and openai key in `cd_scripts/vip-bench_evaluator.py`.
+After running, there are folers `answers` and `results` in `output/ViP-Bench`. Move/copy `results` to  `ViP-Bench` that was downloaded before. Then, specify split, method, <b>absolute path</b> of `ViP-Bench` and openai key in `cd_scripts/vip-bench_evaluator.py`.
 ```python
 openai.api_key = "your api_key"
 openai.api_base = "your api_base"
