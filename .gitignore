@@ -50,5 +50,5 @@ flash_attn-2.6.3+cu118torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
 hf_download.bash
 ViP-Bench
 ViP-Bench_Evaluator
-cd_scripts/vip-bench_evaluator copy.py
+cd_scripts/vip-bench_evaluator_copy.py
 
