@@ -10,7 +10,7 @@ import time
 ###### define the type of your visual prompt  ######
 vipbench_split = 'human' # 'bbox'
 # vipbench_split = 'bbox' # 'human'
-vipbench_path = "/root/autodl-tmp/ViP-LLaVA/ViP-Bench" #  "/path/to/vip-bench"
+vipbench_path = "" #  "/path/to/vip-bench"
 ###### change your model name ######
 model = "vip-llava-7b"
 result_path = os.path.join(vipbench_path, "results")

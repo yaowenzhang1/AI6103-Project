@@ -18,13 +18,13 @@ python ./eval/object_hallucination_vqa_llava.py \
 --model-path ${model_path} \
 --question-file ./data/POPE/${dataset_name}/${dataset_name}_pope_${type}.json \
 --image-folder ${image_folder} \
---answers-file ./output/llava15_${dataset_name}_pope_${type}_answers_noone_cd_seed${seed}.jsonl \
+--answers-file ./output/llava15_${dataset_name}_pope_${type}_answers_no_cd_seed${seed}.jsonl \
 --seed ${seed} \
 --use_cd --cd_alpha $cd_alpha --cd_beta $cd_beta --noise_step $noise_step --seed ${seed} \
 
 
 python ./eval/eval_pope.py \
-    --ans_file  ./output/llava15_${dataset_name}_pope_${type}_answers_noone_cd_seed${seed}.jsonl\
+    --ans_file  ./output/llava15_${dataset_name}_pope_${type}_answers_no_cd_seed${seed}.jsonl\
     --label_file ./data/POPE/${dataset_name}/${dataset_name}_pope_${type}.json\
 
 
