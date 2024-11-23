@@ -2,7 +2,7 @@
 ```bash
 conda env create -f environment.yml
 ```
-or refer to the [ViP-LLaVA-README.md](https://github.com/ssbhxlj/AI6103-Project/blob/main/README.md) to install manually
+or refer to the [ViP-LLaVA-README.md](https://github.com/ssbhxlj/AI6103-Project/blob/main/ViP-LLaVA-README.md) to install manually.
 
 ## Download 
 ### Model Weights 
@@ -44,7 +44,10 @@ conv.append_message(conv.roles[0], qs + " Please answer this question with a wor
 conv.append_message(conv.roles[0], qs)
 ```
 
-then, specify dataset(coco/gqa/aokvqa) and type(random/popular/adversarial) in `eval/object_hallucination_vqa_llava.py`
+then, specify dataset(coco/gqa/aokvqa) and type(random/popular/adversarial) in `cd_scripts/llava1.5_pope.bash`. If you don't want to use VCD, delete or comment
+```bash
+--use_cd --cd_alpha $cd_alpha --cd_beta $cd_beta --noise_step $noise_step --seed ${seed} \
+```
 
 then, run 
 ```bash
@@ -61,7 +64,7 @@ then run
 bash cd_scripts/vcd_vipbench.bash
 ```
 
-After running, there are folers `answers` and `results` in `output/ViP-Bench`. Move/copy `results` to  `ViP-Bench` that was downloaded before. Then, specify split, method and openai settings in `cd_scripts/vip-bench_evaluator.py`.
+After running, there are folers `answers` and `results` in `output/ViP-Bench`. Move/copy `results` to  `ViP-Bench` that was downloaded before. Then, specify split, method and openai key in `cd_scripts/vip-bench_evaluator.py`.
 ```python
 openai.api_key = "your api_key"
 openai.api_base = "your api_base"
